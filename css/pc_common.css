@@ -6,7 +6,8 @@ a{text-decoration:none;}
 a:link, a:visited, a:hover, a:active{color:#000;}
 
 .util_f::after,
-header::after{
+header::after,
+#icon::after{
 	content:'';
 	display:block;
 	clear:both;
@@ -332,13 +333,12 @@ body{max-height: 970px;}
 }
 
 /*아이콘*/
-#icon>a:first-child>img{
-    width: 37px;
-    margin-right: 10px;
-}
-#icon>a:last-child>img{
-    width: 30px;
-    margin:0px 50px 1px 0px;
+#icon>li{float: left;}
+#icon>li:first-child{margin-right: 10px;}
+#icon>li:first-child>a>img{width: 30px;}
+#icon>li:last-child>a>img{
+    width: 26px;
+    margin:2px 30px 1px 0px;
 }
 
 
@@ -406,6 +406,16 @@ body{max-height: 970px;}
 .menu>li:last-child>a:hover::after{width:120px;}
 
 /*footer*/
+footer{
+    width: 100%;
+    height: 130px;
+    background: #fff;
+    border-top: solid 1px #d4d4d4;
+    box-sizing: border-box;
+	position: fixed;
+	right: 0; bottom: 0px;
+	z-index: 9999;
+}
 .util_f>li{float: left;}
 footer>div{
     height: 130px; width: 90%;

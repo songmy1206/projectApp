@@ -7,7 +7,8 @@ a{text-decoration:none;}
 a:link, a:visited, a:hover, a:active{color:#888;}
 
 .util_f::after,
-header::after{
+header::after,
+#icon::after{
     content:'';
     display:block;
     clear:both;
@@ -357,13 +358,12 @@ body{
 }
 
 /*아이콘*/
-#icon>a:first-child>img{
-    width: 30px;
-    margin-right: 5px;
-}
-#icon>a:last-child>img{
-    width: 25px;
-    margin:0px 30px 1px 0px;
+#icon>li{float: left;}
+#icon>li:first-child{margin-right: 10px;}
+#icon>li:first-child>a>img{width: 30px;}
+#icon>li:last-child>a>img{
+    width: 26px;
+    margin:2px 30px 1px 0px;
 }
 
 

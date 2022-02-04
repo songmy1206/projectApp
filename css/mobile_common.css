@@ -8,7 +8,8 @@
     a:link, a:visited, a:hover, a:active{color:#888;}
     
     .util_f::after,
-    header::after{
+    header::after,
+    #icon::after{
         content:'';
         display:block;
         clear:both;
@@ -104,7 +105,7 @@
         background:#fff;
     }
     .menu{
-        width:60%; height: 705px;
+        width:60%; height: 715px;
         margin:0px auto;
         position:absolute;
         display:none;
@@ -165,7 +166,7 @@
         display:none;
         background:rgba(255, 255, 255, 0.95);
         float: right;
-        position: relative;
+        position: fixed;
     }
     .login{
         width: 180px; height: 50px;
@@ -252,6 +253,7 @@
         color: #fff;
         font-weight: bold;
         font-size: 18px;
+        border: 0;
     }
     
     
@@ -354,17 +356,17 @@
         color: #fff;
         font-weight: bold;
         font-size: 18px;
+        border: 0;
     }
     
     /*아이콘*/
-    #icon>a:first-child>img{
-        width: 30px;
-        margin:0px 5px 0px 0px;
-    }
-    #icon>a:last-child>img{
-        width: 25px;
-        margin:0px 30px 1px 0px;
-    }
+#icon>li{float: left;}
+#icon>li:first-child{margin-right: 10px;}
+#icon>li:first-child>a>img{width: 30px;}
+#icon>li:last-child>a>img{
+    width: 26px;
+    margin:2px 30px 1px 0px;
+}
 
    
 /*footer*/
@@ -376,7 +378,7 @@ footer{
     box-sizing: border-box;
 	position: fixed;
 	right: 0; bottom: 0px;
-	z-index: 9999;
+	z-index: 999999999;
 }
 
 footer>div{
